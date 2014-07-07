@@ -1,4 +1,4 @@
-require docking_station
+require 'docking_station'
 
 describe DockingStation do
 
@@ -9,10 +9,10 @@ describe DockingStation do
 
 	it 'can dock a bike' do
 		nagamura = Bike.new
-		old_street - DockingStation.new
+		old_street = DockingStation.new
 		old_street.dock(nagamura)
 		expect(old_street).to eq [nagamura]
-		expect(old_street.bikes.count)to eq 1
+		expect(old_street.bikes.count).to_eq 1
 	end 
 
 end
